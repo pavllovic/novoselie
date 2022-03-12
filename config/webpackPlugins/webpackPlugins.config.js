@@ -29,7 +29,7 @@ const compressionPlugin = new CompressionPlugin({
 // });
 
 const pages = [
-  {name: 'index', title: 'TastyCookery', chunks: ['index']}
+  {name: 'index', title: 'Novoselie', chunks: ['index']}
 ]
 
 const htmlWebpackPlagin = pages.map((page) => {
