@@ -8,7 +8,7 @@ mixin card-company(company)
       img(class='card-company--bg' src=require(`Images/brand/${company.id}/photo/1.jpg`) alt=`${company.altImage}` width='962' height='465')
     div(class='card-company--box')
       div(class='card-company--logo')
-        img(class='card-company--image' src=require(`Images/brand/${company.id}/logo/logo.svg`) alt=`${company.name}`)
+        img(class='card-company--image' src=require(`Images/brand/${company.id}/logo/logo.svg`) alt=`${company.name}` width='207' height='50')
       div(class='card-company--info')
         div(class='card-company--data')
           span(class='card-company--data-value') #{company.countProjects}
