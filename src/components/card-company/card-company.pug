@@ -5,7 +5,7 @@ mixin card-company(company)
                 ${require(`Images/brand/${company.id}/photo/1-1.5x.webp`)} 2x` type='image/webp')
       source(srcset=`${require(`Images/brand/${company.id}/photo/1.jpg`)},
                 ${require(`Images/brand/${company.id}/photo/1-1.5x.jpg`)} 2x` type='image/jpg')
-      img(class='card-company--bg' src=require(`Images/brand/${company.id}/photo/1.jpg`) alt=`${company.altImage}`)
+      img(class='card-company--bg' src=require(`Images/brand/${company.id}/photo/1.jpg`) alt=`${company.altImage}` width='962' height='465')
     div(class='card-company--box')
       div(class='card-company--logo')
         img(class='card-company--image' src=require(`Images/brand/${company.id}/logo/logo.svg`) alt=`${company.name}`)
