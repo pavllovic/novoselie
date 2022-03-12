@@ -1,0 +1,13 @@
+@import "./order-call--btn-open";
+@import "./order-call--label";
+
+.order-call {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.order-call .popup-form {
+  top: 0;
+  left: 0;
+}

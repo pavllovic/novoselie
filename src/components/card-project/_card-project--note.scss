@@ -1,0 +1,17 @@
+.card-project--note {
+  position: absolute;
+  z-index: 1;
+  top: 2rem;
+  left: 2rem;
+  padding: 0.3rem;
+  background-color: $bg-main-color;
+  border-radius: 4px;
+  font-size: 1.3rem;
+}
+
+.card-project--note-count {
+  top: auto;
+  right: 2rem;
+  bottom: 3rem;
+  left: auto;
+}

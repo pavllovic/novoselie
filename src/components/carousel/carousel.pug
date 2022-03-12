@@ -1,0 +1,15 @@
+mixin carousel(photo, id)
+  div(class='carousel' id=`carousel-${id}`)
+    div(class='carousel--list')
+      each slide, index in photo
+        div(class='carousel--list-item' id=`slide_${id}-${index + 1}` role='tabpanel' aria-label=`слайд номер ${index + 1}` data-carousel='slide')
+          picture
+            source(srcset=`${require(`Images/brand/${id}/photo/${slide.image}.webp`)},
+                ${require(`Images/brand/${id}/photo/${slide.image}-1.5x.webp`)} 2x` type='image/webp')
+            source(srcset=`${require(`Images/brand/${id}/photo/${slide.image}.jpg`)},
+                      ${require(`Images/brand/${id}/photo/${slide.image}-1.5x.jpg`)} 2x` type='image/jpg')
+            img(class='carousel--image' src=require(`Images/brand/${id}/photo/${slide.image}.jpg`) alt=`${slide.alt}`)
+    div(class='carousel--tablist' role='tablist' aria-label='carousel tablist')
+      each tab, index in photo
+        div(class='carousel--tablist-item' role='tab'  
+            aria-selected='false' aria-controls=`slide_${id}-${index + 1}` aria-label=`таб ${index + 1}` tabindex='-1')

@@ -1,0 +1,8 @@
+@import "./navigation--item";
+@import "./navigation--link";
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

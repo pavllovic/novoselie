@@ -1,0 +1,41 @@
+.carousel--tablist-item {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  padding: 1rem 0;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.carousel--tablist-item::after {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: $bg-main-color;
+  content: "";
+  opacity: 0.3;
+  transition: opacity 0.3s ease-out;
+}
+
+.carousel--tablist-item.is-active::after {
+  opacity: 1;
+}
+
+.carousel--tablist-item:focus,
+.carousel--tablist-item:focus-visible {
+  outline: none;
+}
+
+.carousel--tablist-item.is-focus {
+  outline: 2px solid hsl(200deg 55% 45%);
+}
+
+.carousel--tablist-item.is-active.is-focus {
+  outline: none;
+}
+
+.carousel--tablist-item.is-active.is-focus:focus,
+.carousel--tablist-item.is-active.is-focus:focus-visible {
+  outline: 2px solid hsl(200deg 55% 45%);
+}

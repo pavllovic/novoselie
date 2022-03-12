@@ -1,0 +1,23 @@
+.offer--note {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  color: $text-color-lighten;
+  font-size: var(--text-sm, 1.2rem);
+  font-weight: 500;
+}
+
+.offer--note svg {
+  margin: 0.6rem;
+  fill: #b4b4b4;
+}
+
+.offer--note svg[data-icon="man"] {
+  width: 0.7rem;
+  height: 1.4rem;
+}
+
+.offer--note svg[data-icon="car"] {
+  width: 1.8rem;
+  height: 0.9rem;
+}

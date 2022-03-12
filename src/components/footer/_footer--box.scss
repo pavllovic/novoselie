@@ -1,0 +1,9 @@
+.footer--box {
+  display: flex;
+  width: 100%;
+  max-width: $max-width;
+  flex-wrap: wrap;
+  padding: 30px var(--space-md, 50px);
+  padding-top: 40px;
+  margin: 0 auto;
+}

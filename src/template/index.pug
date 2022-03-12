@@ -1,0 +1,76 @@
+extends ./layout/base.pug
+
+block preload
+
+block styles
+  style. 
+    @font-face {
+      font-display: swap;
+      font-family: Montserrat;
+      font-weight: 500;
+      src:
+        url(#{require("Fonts/montserrat-500.woff2")}) format("woff2"),
+        url(#{require("Fonts/montserrat-500.woff")}) format("woff");
+    }
+
+    @font-face {
+      font-display: swap;
+      font-family: Montserrat;
+      font-weight: 600;
+      src:
+        url(#{require("Fonts/montserrat-600.woff2")}) format("woff2"),
+        url(#{require("Fonts/montserrat-600.woff")}) format("woff");
+    }
+
+    @font-face {
+      font-display: swap;
+      font-family: Montserrat;
+      font-weight: 900;
+      src:
+        url(#{require("Fonts/montserrat-900.woff2")}) format("woff2"),
+        url(#{require("Fonts/montserrat-900.woff")}) format("woff");
+    }
+
+block content
+  include ../components/card-company/card-company.pug
+  include ../components/card-project/card-project.pug
+  include ../components/filter/filter.pug
+  - const companyProjects = require('BD/projects/company.json');
+  - const partnersProjects = require('BD/projects/partners.json');
+  - 
+    let countOffers = 0;
+    partnersProjects.forEach((item) => {
+      countOffers += item.offers.length;
+    });
+  
+  -
+    const formatString = function(count, var1, var2, var3) {
+      const char = `${count}`.slice(-1);
+      const chars = `${count}`.slice(-2);
+
+      let string = var1;
+
+      if(char === '1' && count !== 11) string = var2;
+      if(char === '2' || char === '3' || char === '4') string = var3;
+      if((parseInt(chars, 10) >= 10) && (parseInt(chars, 10) <= 20)) string = var1;
+
+      return string;
+    }
+
+  div(class='wrapper')
+    include ../components/header/header.pug
+    section(class='content')
+      -
+        const stringStart = formatString(countOffers, 'найдено', 'найден', 'найдено');
+        const stringEnd = formatString(countOffers, 'проектов', 'проект', 'проекта');
+      h1(class='heading' id='heading') #{stringStart} #{countOffers} #{stringEnd}
+      div(class='content--aside')
+        +filter(countOffers)
+      section(class='content--main')
+        h2(class='visually-hidden') Список квартир.
+        div(class='project-list')
+          each project, index in partnersProjects
+            +card-project(project, index === 0 ? 'lg' : false)
+          +card-company(companyProjects)
+  include ../components/footer/footer.pug
+  include ../images/icon/icon-sprite.svg

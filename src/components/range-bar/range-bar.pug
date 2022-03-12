@@ -1,0 +1,9 @@
+div(class='range-bar' id='range-bar')
+  label(class='range-bar--label' for='input-from')
+    input(class='input-sm' type='text' inputmode='numeric' name='priceFrom' id='input-from' data-range='input-from')
+    span(class='range-bar--lebel-text') Цена от
+  label(class='range-bar--label' for='input-to')
+    input(class='input-sm' type='text' inputmode='numeric' name='priceTo' id='input-to' data-range='input-to')
+    span(class='range-bar--lebel-text') До
+  include ./slider/slider.pug
+  

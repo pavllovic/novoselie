@@ -1,0 +1,12 @@
+.checkbox-rooms--label {
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox-rooms--label:first-child {
+  flex-grow: 1;
+}
+
+.checkbox-rooms--label:not(:first-child) {
+  border-left: 1px solid $second-color;
+}

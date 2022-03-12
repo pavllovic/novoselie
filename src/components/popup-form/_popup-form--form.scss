@@ -1,0 +1,21 @@
+.popup-form--form {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.popup-form--form input {
+  padding-right: 3.4rem;
+  color: $text-color;
+  font-size: var(--text-lg, 1.6rem);
+}
+
+.popup-form--form .label {
+  width: 100%;
+}
+
+.popup-form--form [type="submit"] {
+  margin-top: 2rem;
+}

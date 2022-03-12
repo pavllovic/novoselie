@@ -1,0 +1,10 @@
+@import "./project-links--header";
+@import "./project-links--list";
+@import "./project-links--list-item";
+@import "./project-links--link";
+
+.project-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

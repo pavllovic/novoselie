@@ -1,0 +1,23 @@
+.search-bar--btn-open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border: none;
+  background-color: $bg-main-color;
+  cursor: pointer;
+  transition: opacity 0.25s ease-out;
+}
+
+.search-bar--btn-open svg {
+  width: auto;
+  height: 1.7rem;
+  fill: $text-color;
+  pointer-events: none;
+}
+
+@media not all and (any-pointer: coarse) {
+  .search-bar--btn-open:hover {
+    opacity: 0.5;
+  }
+}

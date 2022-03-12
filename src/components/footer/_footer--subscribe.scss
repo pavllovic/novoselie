@@ -1,0 +1,12 @@
+.footer--subscribe .form-subscribe {
+  max-width: 37rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (min-width: map-get($breakpoints, "large")) {
+  .footer--subscribe .form-subscribe {
+    margin-left: 0;
+    text-align: left;
+  }
+}

@@ -1,0 +1,9 @@
+@import "./checkbox-rooms--label";
+@import "./checkbox-rooms--checkbox";
+@import "./checkbox-rooms--label-text";
+
+.checkbox-rooms {
+  display: flex;
+  border: 1px solid $second-color;
+  border-radius: 6px;
+}

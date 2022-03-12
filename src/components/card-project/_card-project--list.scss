@@ -1,0 +1,27 @@
+.card-project--list {
+  overflow: auto;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  overscroll-behavior: contain;
+  scrollbar-color: $color-gray-1 $accent-color;
+  scrollbar-width: thin;
+}
+
+.card-project-sm .card-project--list {
+  padding-top: 2.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.card-project--list::-webkit-scrollbar {
+  width: 3px;
+  appearance: none;
+}
+
+.card-project--list::-webkit-scrollbar-track {
+  margin: 0;
+  background-color: $accent-color;
+}
+
+.card-project--list::-webkit-scrollbar-thumb {
+  background-color: $color-gray-1;
+}

@@ -1,0 +1,9 @@
+@import "./carousel--list";
+@import "./carousel--list-item";
+@import "./carousel--image";
+@import "./carousel--tablist";
+@import "./carousel--tablist-item";
+
+.carousel {
+  display: flex;
+}

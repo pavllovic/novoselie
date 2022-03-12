@@ -1,0 +1,62 @@
+@import "./footer--box";
+@import "./footer--bottom";
+@import "./footer--subscribe";
+
+.footer {
+  border-top: 1px solid hsl(235deg 20% 76%);
+}
+
+.footer--project,
+.footer--navigation,
+.footer--social-links {
+  width: 50%;
+  margin-bottom: 40px;
+}
+
+.footer--subscribe {
+  width: 100%;
+  margin: 3rem 0;
+}
+
+.footer--project:nth-child(2) .project-links,
+.footer .social-links {
+  align-items: flex-end;
+  text-align: right;
+}
+
+@media (min-width: map-get($breakpoints, "middle")) {
+  .footer--project,
+  .footer--navigation,
+  .footer--social-links {
+    width: auto;
+    margin-bottom: 40px;
+  }
+
+  .footer--project {
+    margin-right: 6rem;
+  }
+
+  .footer--project:nth-child(2) .project-links {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .footer--social-links {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: map-get($breakpoints, "large")) {
+  .footer--project {
+    margin-right: 6rem;
+  }
+
+  .footer--social-links {
+    margin: 0 auto;
+  }
+
+  .footer--subscribe {
+    width: auto;
+    margin: 0;
+  }
+}

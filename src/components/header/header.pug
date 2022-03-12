@@ -1,0 +1,24 @@
+-
+  const headerLinks = [
+    {label: 'Ипотека', href: '#'},
+    {label: 'О группе компаний', href: '#'},
+    {label: 'Новости и акции', href: '#'},
+    {label: 'Тендеры', href: '#'},
+    {label: 'Коммерческие помещения', href: '#'},
+    {label: 'Контакты', href: '#'}
+  ]
+
+header(class='header')
+  include ../logo/logo.pug
+  ul(class='header--navigation')
+    each link in headerLinks
+      li(class='header--navigation-item')
+        a(href=`${link.href}` title=`${link.label}`) #{link.label}
+  a(class='btn-sm' href='#') Проекты
+  include ../link-live/link-live.pug
+  div(class='header--order-call')
+    include ../order-call/order-call.pug
+  include ../link-like/link-like.pug
+  include ../search-bar/search-bar.pug
+  include ../menu/menu.pug
+  

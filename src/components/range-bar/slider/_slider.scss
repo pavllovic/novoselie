@@ -1,0 +1,11 @@
+@import "./slider--track";
+@import "./slider--label";
+@import "./slider--input-range";
+
+.slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 1.2rem;
+}

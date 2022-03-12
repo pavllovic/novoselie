@@ -1,0 +1,13 @@
+.card-company--info {
+  display: flex;
+  flex-direction: column;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 6rem;
+}
+
+@media (min-width: 550px) {
+  .card-company--info {
+    flex-direction: row;
+  }
+}

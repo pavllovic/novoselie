@@ -1,0 +1,15 @@
+.offer--header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+@media (min-width: map-get($breakpoints, "large")) {
+  .card-project-lg .offer--header {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 3rem;
+    margin-bottom: 0.5rem;
+  }
+}

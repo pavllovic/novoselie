@@ -1,0 +1,14 @@
+.form-subscribe--form {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.form-subscribe--form label {
+  flex-grow: 1;
+}
+
+.form-subscribe--form .btn {
+  flex-shrink: 0;
+  margin-left: 10px;
+}

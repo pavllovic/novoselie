@@ -1,0 +1,13 @@
+- 
+  const navLink = [
+    {label: 'О компании', href: '#'}, 
+    {label: 'Пресс-релизы', href: '#'}, 
+    {label: 'Контакты', href: '#'}, 
+    {label: 'Тендеры', href: '#'}, 
+    {label: 'Коммерческие помещения', href: '#'}
+  ]
+
+ul(class='navigation')
+  each link in navLink
+    li(class='navigation--item')
+      a(class='navigation--link' href=`${link.href}` title=`${link.label}`) #{link.label}

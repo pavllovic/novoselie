@@ -1,0 +1,12 @@
+- 
+  socialLink = [
+    {label: 'vkontakte', href: '#'},
+    {label: 'facebook', href: '#'}, 
+    {label: 'instagram', href: '#'}, 
+    {label: 'youtube', href: '#'}
+  ];
+
+ul(class='social-links')
+  each link in socialLink
+    li(class='social-links--item') 
+      a(class='social-links--link' href=`${link.href}` title=`${link.label}`) #{link.label}

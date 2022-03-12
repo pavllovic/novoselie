@@ -1,0 +1,95 @@
+ [
+  {
+    "id": "2",
+    "name" : "ЖК Выборгский", 
+    "location": {
+      "type": "man",
+      "time": "20",
+      "metro": "Московская"
+    },
+    "furniture": true,
+    "offers": [
+      {"title": "Участок 1", "minPrice": "4.74", "product": "1 корпус", "ready": false, "year": "2023", "quarter": "3", "apartment": [
+        {"price": "7", "room": "2"},
+        {"price": "15", "room": "5"},
+        {"price": "5", "room": "1"}
+      ]},
+      {"title": "Участок 2", "minPrice": "4.74", "product": "1 корпус", "ready": false, "year": "2023", "quarter": "4", "apartment": [
+        {"price": "7", "room": "2"},
+        {"price": "9", "room": "3"},
+        {"price": "5", "room": "1"}
+      ]},
+      {"title": "Участок 3", "minPrice": "4.74", "product": "1 корпус", "ready": false, "year": "2024", "quarter": "1", "apartment": [
+        {"price": "7", "room": "2"},
+        {"price": "9", "room": "3"},
+        {"price": "10", "room": "4"}
+      ]},
+      {"title": "Участок 4", "minPrice": "4.74", "product": "1 корпус", "ready": false, "year": "2024", "quarter": "2", "apartment": [
+        {"price": "7", "room": "2"},
+        {"price": "9", "room": "3"},
+        {"price": "5", "room": "1"}
+      ]}
+    ],
+    "photo": [
+      {"image": "1", "alt": "дом"},
+      {"image": "1", "alt": "дом"},
+      {"image": "1", "alt": "дом"},
+      {"image": "1", "alt": "дом"}
+    ]
+  },
+  {
+    "id": "3",
+    "name" : "ЖК Партнера", 
+    "location": {
+      "type": "man",
+      "time": "20",
+      "metro": "Московская"
+    },
+    "offers": [
+      {"title": "Участок 1", "minPrice": "4.74", "product": "1 корпус", "ready": false, "year": "2023", "quarter": "3", "apartment": [
+        {"price": "7", "room": "2"},
+        {"price": "9", "room": "3"},
+        {"price": "10", "room": "4"}
+      ]},
+      {"title": "Участок 1", "minPrice": "4.74", "product": "1 корпус", "ready": true, "year": "2022", "quarter": "1", "apartment": [
+        {"price": "7", "room": "2"},
+        {"price": "9", "room": "3"},
+        {"price": "5", "room": "1"}
+      ]}
+    ],
+    "photo": [
+      {"image": "1", "alt": "дом"},
+      {"image": "1", "alt": "дом"},
+      {"image": "1", "alt": "дом"},
+      {"image": "1", "alt": "дом"}
+    ]
+  },
+  {
+    "id": "4",
+    "name" : "ЖК Эгоист", 
+    "location": {
+      "type": "car",
+      "time": "20",
+      "metro": "Московская"
+    },
+    "furniture": true,
+    "offers": [
+      {"title": "Участок 1", "minPrice": "4.74", "product": "1 корпус", "ready": false, "year": "2023", "quarter": "3", "apartment": [
+        {"price": "7", "room": "2"},
+        {"price": "9", "room": "3"},
+        {"price": "17", "room": "4"}
+      ]},
+      {"title": "Участок 1", "minPrice": "4.74", "product": "1 корпус", "ready": true, "year": "2022", "quarter": "1", "apartment": [
+        {"price": "25", "room": "5"},
+        {"price": "9", "room": "3"},
+        {"price": "5", "room": "1"}
+      ]}
+    ],
+    "photo": [
+      {"image": "1", "alt": "дом"},
+      {"image": "1", "alt": "дом"},
+      {"image": "1", "alt": "дом"},
+      {"image": "1", "alt": "дом"}
+    ]
+  }
+]

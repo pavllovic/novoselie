@@ -1,0 +1,13 @@
+.offer--heading {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  font-size: var(--text-lg, 1.6rem);
+  font-weight: 900;
+}
+
+@media (min-width: map-get($breakpoints, "large")) {
+  .card-project-lg .offer--heading {
+    margin-bottom: 2rem;
+  }
+}

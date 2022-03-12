@@ -1,0 +1,13 @@
+@use "./breakpoints" as *;
+
+:root {
+  --space-md: 20px;
+  --space-sm: 10px;
+}
+
+@media (min-width: map-get($breakpoints, "large")) {
+  :root {
+    --space-md: 50px;
+    --space-sm: 25px;
+  }
+}

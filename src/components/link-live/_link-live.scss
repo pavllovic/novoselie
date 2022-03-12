@@ -1,0 +1,26 @@
+.link-live {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 0.7rem;
+  background-color: $bg-main-color;
+  border-radius: 4px;
+  box-shadow: 0 0 5px 0 hsl(0deg 0% 93% / 0%);
+  line-height: 1;
+  transition: box-shadow 0.2s ease-out;
+}
+
+.link-live::before {
+  display: block;
+  width: 0.9rem;
+  height: 0.9rem;
+  margin-right: 0.4rem;
+  background-color: $accent-color;
+  border-radius: 50%;
+  content: "";
+}
+
+@media not all and (any-pointer: coarse) {
+  .link-live:hover {
+    box-shadow: 0 0 5px 0 hsl(0deg 0% 93% / 100%);
+  }
+}

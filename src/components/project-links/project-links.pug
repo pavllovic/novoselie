@@ -1,0 +1,7 @@
+mixin project-links(project)
+  section(class='project-links')
+    h3(class='project-links--header') #{project.name}
+    ul(class='project-links--list')
+      each link in project.links
+        li(class='project-links--list-item')
+          a(class='project-links--link' href=`${link.href}` title=`${link.label}`) #{link.label}

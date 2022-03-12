@@ -1,0 +1,19 @@
+.filter--location {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.filter--location input {
+  padding-right: 3.7rem;
+}
+
+.filter--location svg {
+  position: absolute;
+  right: 1rem;
+  width: 1.7rem;
+  height: auto;
+  fill: $text-color-white;
+  opacity: 0.3;
+}

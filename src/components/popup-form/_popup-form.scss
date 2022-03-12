@@ -1,0 +1,24 @@
+@import "./popup-form--controls";
+@import "./popup-form--form";
+
+.popup-form {
+  position: absolute;
+  width: 300px;
+  padding: 2rem 1rem;
+  background-color: $bg-main-color;
+  border-radius: 12px;
+  box-shadow: $box-shadow-1;
+  opacity: 0;
+  transform: translateY(-10px) translateX(-3px);
+  transition-delay: 0.25s, 0s, 0s;
+  transition-duration: 0s, 0.25s, 0.25s;
+  transition-property: visibility, opacity, transform;
+  visibility: hidden;
+}
+
+.popup-form.is-active {
+  opacity: 1;
+  transform: translateY(0) translateX(0);
+  transition-delay: 0s, 0s, 0s;
+  visibility: visible;
+}

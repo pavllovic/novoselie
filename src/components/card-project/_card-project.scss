@@ -1,0 +1,39 @@
+@import "./card-project--carousel";
+@import "./card-project--list";
+@import "./card-project--note";
+
+.card-project {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.card-project .link-live {
+  position: absolute;
+  z-index: 1;
+  bottom: 3rem;
+  left: 2rem;
+  padding: 0.4rem 0.3rem;
+}
+
+.card-project .link-live::before {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+@media (min-width: map-get($breakpoints, "large")) {
+  .card-project {
+    width: calc(50% - var(--space-sm) * 2);
+  }
+
+  .card-project-lg {
+    width: 100%;
+    height: 54.5rem;
+    flex-direction: row;
+  }
+
+  .card-project-lg .card-project--list,
+  .card-project-lg .card-project--carousel {
+    width: 50%;
+  }
+}

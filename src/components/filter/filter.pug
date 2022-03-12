@@ -1,0 +1,31 @@
+mixin filter(countOffers)
+  section(class='filter' id='filter')
+    h2(class='visually-hidden') Настройте фильтр поиска.
+    div(class='filter--top')
+      include ../checkbox-rooms/checkbox-rooms.pug
+      include ../range-bar/range-bar.pug
+      div(class='filter--deadline')
+        label(class='label' for='deadline-1')
+          input(class='checkbox' type='checkbox' name='2023-3' id='deadline-1' data-filter='deadline')
+          span(class='label--text') 3 квартал 2023
+        label(class='label' for='deadline-2')
+          input(class='checkbox' type='checkbox' name='2024-1' id='deadline-2' data-filter='deadline')
+          span(class='label--text') 1 квартал 2024
+        label(class='label' for='deadline-3') 
+          input(class='checkbox' type='checkbox' name='2024-2' id='deadline-3' data-filter='deadline')
+          span(class='label--text') 2 квартал 2024
+        label(class='label' for='deadline-4')
+          input(class='checkbox' type='checkbox' name='2022-4' id='deadline-4' data-filter='deadline')
+          span(class='label--text') До конца года
+      label(class='filter--location' for='location')
+        span(class='visually-hidden') Район метро
+        input(class='input-sm' type='text' name='location' placeholder='Район метро' id='location' data-filter='location')
+        svg(aria-hidden='true' focusable='false' width='100' height='100')
+          use(href='#icon-search')
+    div(class='filter--bottom')
+
+      -
+        const string = formatString(countOffers, 'проектов', 'проект', 'проекта');
+
+      span(class='filter--result' data-filter='result') #{countOffers} #{string}
+      button(class='btn' type='button') Показать

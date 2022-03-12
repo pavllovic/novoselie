@@ -1,0 +1,15 @@
+mixin offer(project)
+  include ../offer-list/offer-list.pug
+
+  div(class='offer')
+    div(class='offer--header')
+      h3(class='offer--heading') 
+        span #{project.name}
+        span(class='offer--note') 
+          | м. #{project.location.metro}
+          svg(aria-hidden='true' focusable='false' width='100' height='100' data-icon=`${project.location.type}`)
+            use(href=`#icon-${project.location.type}`) 
+          | #{project.location.time} мин
+      a(class='btn' href='#' title='квартиры') Квартиры
+    div(class='offer--list')
+      +offer-list(project.offers)

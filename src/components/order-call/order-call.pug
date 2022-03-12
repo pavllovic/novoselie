@@ -1,0 +1,12 @@
+div(class='order-call')
+  button(class='order-call--btn-open' type='button' data-opener='open') Заказать звонок
+  span(class='order-call--label') +7 812 309-77-77
+  div(class='popup-form' data-opener='popup')
+    form(class='popup-form--form' action='#' method='post' name='order-call')
+      label(class='label' for='order-call--input')
+        span(class='visually-hidden') введите телефонный номер.
+        input(class='input-sm' type='text' inputmode='numeric' name='phone' placeholder='Телефон' id='order-call--input' required)
+      button(class='btn-sm' type='submit') Заказать
+    div(class='popup-form--controls')
+      button(class='btn-close' type='button' data-opener='close')
+        span(class='visually-hidden') закрыть.

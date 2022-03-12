@@ -1,0 +1,9 @@
+.checkbox-rooms--label-text {
+  position: relative;
+  z-index: 1;
+  display: block;
+  padding: 1rem;
+  padding-right: 2.5rem;
+  color: $text-color-white;
+  font-size: var(--text-lg, 1.6rem);
+}

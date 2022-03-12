@@ -1,0 +1,22 @@
+include ../carousel/carousel.pug
+include ../offer/offer.pug
+
+mixin card-project(project, size)
+  div(class=`card-project ${size ? 'card-project-' + size : ''}` id=`project-${project.id}`)
+    div(class='card-project--carousel')
+      include ../link-live/link-live.pug
+      if project.furniture
+        span(class='card-project--note') Мебелировка зависит от сценария
+
+      -
+        let countApartment = 0;
+        project.offers.forEach((offer) => {
+          countApartment += offer.apartment.length;
+        })
+        const string = formatString(countApartment, 'предложений', 'предложение', 'предложения');
+        
+      span(class='card-project--note card-project--note-count') #{countApartment} #{string}
+      +carousel(project.photo, project.id)
+    div(class='card-project--list')
+      +offer(project)
+    

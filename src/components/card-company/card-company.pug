@@ -1,0 +1,24 @@
+mixin card-company(company)
+  div(class='card-company')
+    picture
+      source(srcset=`${require(`Images/brand/${company.id}/photo/1.webp`)},
+                ${require(`Images/brand/${company.id}/photo/1-1.5x.webp`)} 2x` type='image/webp')
+      source(srcset=`${require(`Images/brand/${company.id}/photo/1.jpg`)},
+                ${require(`Images/brand/${company.id}/photo/1-1.5x.jpg`)} 2x` type='image/jpg')
+      img(class='card-company--bg' src=require(`Images/brand/${company.id}/photo/1.jpg`) alt=`${company.altImage}`)
+    div(class='card-company--box')
+      div(class='card-company--logo')
+        img(class='card-company--image' src=require(`Images/brand/${company.id}/logo/logo.svg`) alt=`${company.name}`)
+      div(class='card-company--info')
+        div(class='card-company--data')
+          span(class='card-company--data-value') #{company.countProjects}
+          - let countProjects = formatString(company.countProjects, 'проектов', 'проект', 'проекта');
+          span(class='card-company--data-label') #{countProjects}
+        div(class='card-company--data')
+          span(class='card-company--data-value') #{company.countOffers}
+          - let countOffers = formatString(company.countOffers, 'предложений', 'предложение', 'предложения');
+          span(class='card-company--data-label') #{countOffers}
+        div(class='card-company--data')
+          span(class='card-company--data-value') #{company.minPrice}
+          span(class='card-company--data-label') от млн. ₽
+      button(class='btn-sm') Перейти к проектам

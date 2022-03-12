@@ -1,0 +1,14 @@
+div(class='search-bar')
+  button(class='search-bar--btn-open' type='button' title='поиск' data-opener='open')
+    span(class='visually-hidden') открыть поиск.
+    svg(aria-hidden='true' focusable='false' width='100' height='100') 
+      use(href='#icon-search')
+  div(class='popup-form' data-opener='popup')
+    form(class='popup-form--form' method='post' action='#' name='search-bar')
+      label(class='label' for='search-bar--input')
+        span(class='visually-hidden') Найти.
+        input(class='input-sm' type='text' name='search' id='search-bar--input' placeholder='Найти...' required)
+      button(class='btn-sm' type='submit') Найти
+    div(class='popup-form--controls')
+      button(class='btn-close' type='button' data-opener='close')
+          span(class='visually-hidden') закрыть.

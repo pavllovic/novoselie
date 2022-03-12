@@ -1,0 +1,27 @@
+%input {
+  width: 100%;
+  border: 1px solid $color-gray-1;
+  background: $bg-main-color;
+  color: $text-color-lighten;
+  font-size: var(--text-md, 1.4rem);
+}
+
+.input {
+  @extend %input;
+
+  padding: 1.5rem 0.9rem;
+  border-radius: 12px;
+}
+
+.input-sm {
+  @extend %input;
+
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.input-sm::placeholder,
+.input::placeholder {
+  color: $text-color-lighten;
+  font-size: var(--text-md, 1.4rem);
+}

@@ -1,0 +1,14 @@
+mixin offer-list(array)
+  ul(class='offer-list')
+    each offer in array
+      li(class='offer-list--item')
+        p(class='offer-list--title') #{offer.title}
+        if offer.ready
+          span(class='offer-list--product') 
+            span #{offer.product}. 
+            span Дом сдан
+        else
+          span(class='offer-list--product') 
+            span #{offer.product}. 
+            span #{offer.quarter} квартал #{offer.year}
+        span(class='offer-list--price') от #{offer.minPrice} млн. ₽

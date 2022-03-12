@@ -1,0 +1,9 @@
+@import "./offer--header";
+@import "./offer--heading";
+@import "./offer--note";
+@import "./offer--list";
+
+.offer {
+  display: flex;
+  flex-direction: column;
+}

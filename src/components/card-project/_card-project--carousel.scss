@@ -1,0 +1,18 @@
+.card-project--carousel {
+  position: relative;
+  overflow: hidden;
+  height: 35.5rem;
+  background-color: #fafafa;
+  border-radius: 20px;
+}
+
+.card-project--carousel .carousel {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: map-get($breakpoints, "large")) {
+  .card-project-lg .card-project--carousel {
+    height: 100%;
+  }
+}

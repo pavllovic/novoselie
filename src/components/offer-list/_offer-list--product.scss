@@ -1,0 +1,13 @@
+.offer-list--product {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.2rem;
+  margin-right: 10px;
+  font-size: var(--text-md, 1.4rem);
+}
+
+@media (min-width: 420px) {
+  .offer-list--product {
+    display: inline;
+  }
+}

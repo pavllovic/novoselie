@@ -1,0 +1,33 @@
+%btn {
+  border: none;
+  background-color: $accent-color;
+  border-radius: 12px;
+  box-shadow: 0 0 5px 0 hsl(13deg 70% 52% / 0%);
+  color: $text-color-white;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: calc(17 / 14);
+  transition-duration: 0.25s;
+  transition-property: box-shadow;
+  transition-timing-function: ease-out;
+}
+
+.btn {
+  @extend %btn;
+
+  padding: 1.5rem 1rem;
+}
+
+.btn-sm {
+  @extend %btn;
+
+  padding: 1rem;
+}
+
+@media not all and (any-pointer: coarse) {
+  .btn:hover,
+  .btn-sm:hover {
+    box-shadow: 0 0 5px 0 hsl(13deg 70% 52% / 100%);
+  }
+}

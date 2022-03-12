@@ -1,0 +1,9 @@
+@import "./offer-list--item";
+@import "./offer-list--title";
+@import "./offer-list--product";
+@import "./offer-list--price";
+
+.offer-list {
+  display: flex;
+  flex-direction: column;
+}

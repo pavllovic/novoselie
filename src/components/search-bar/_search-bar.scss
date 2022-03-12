@@ -1,0 +1,12 @@
+@import "./search-bar--btn-open";
+
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar .popup-form {
+  top: 0;
+  right: 0;
+}

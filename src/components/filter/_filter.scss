@@ -1,0 +1,27 @@
+@import "./filter--deadline";
+@import "./filter--loaction";
+@import "./filter--top";
+@import "./filter--bottom";
+@import "./filter--result";
+
+.filter {
+  width: 100%;
+  user-select: none;
+}
+
+.filter input:not([type="checkbox"], [type="range"]) {
+  border: 1px solid $second-color;
+  background-color: $bg-accent-color;
+  color: $text-color-white;
+  font-size: var(--text-lg, 1.6rem);
+}
+
+.filter .filter--location,
+.filter .filter--deadline,
+.filter .range-bar {
+  margin-top: 3rem;
+}
+
+.filter .checkbox-rooms {
+  max-width: 30rem;
+}

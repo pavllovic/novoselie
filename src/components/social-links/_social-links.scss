@@ -1,0 +1,7 @@
+@import "./social-links--item";
+@import "./social-links--link";
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+}

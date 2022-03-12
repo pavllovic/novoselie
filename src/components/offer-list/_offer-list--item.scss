@@ -1,0 +1,18 @@
+.offer-list--item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.offer-list--item:not(:last-child) {
+  border-bottom: 1px solid $color-gray-1;
+}
+
+@media (min-width: map-get($breakpoints, "large")) {
+  .card-project-lg .offer-list--item {
+    padding: 3rem;
+    padding-right: 2rem;
+  }
+}

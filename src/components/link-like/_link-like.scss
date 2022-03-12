@@ -1,0 +1,14 @@
+.link-like {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: $bg-main-color;
+  cursor: pointer;
+}
+
+.link-like svg {
+  width: auto;
+  height: 1.7rem;
+  fill: $text-color;
+}

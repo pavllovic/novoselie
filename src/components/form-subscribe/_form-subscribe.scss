@@ -1,0 +1,11 @@
+@import "./form-subscribe--header";
+@import "./form-subscribe--form";
+@import "./form-subscribe--note";
+
+.form-subscribe {
+  display: flex;
+  width: 100%;
+  max-width: 37rem;
+  flex-direction: column;
+  color: $text-color-lighten;
+}

@@ -1,0 +1,30 @@
+.range-bar--label {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.range-bar--label:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+.range-bar--label .input-sm {
+  font-size: var(--text-lg, 1.6rem);
+}
+
+.range-bar--label[for="input-from"] input {
+  padding-left: 7.4rem;
+}
+
+.range-bar--label[for="input-to"] input {
+  padding-right: 2rem;
+  padding-left: 3.5rem;
+}
+
+.range-bar--label[for="input-to"]::after {
+  position: absolute;
+  right: 1rem;
+  color: $text-color-lighten;
+  content: "₽";
+}

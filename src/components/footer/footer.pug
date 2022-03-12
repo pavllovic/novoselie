@@ -1,0 +1,40 @@
+- 
+  const main = {
+    name: 'ГК Новоселье',
+    links: [
+      {label: 'ЖК Дуэт', href: '#'},
+      {label: 'ЖК Эпсилон', href: '#'},
+      {label: 'ЖК ЕТА', href: '#'},
+      {label: 'ЖК Уютный', href: '#'},
+    ]
+  }
+
+  const partners = {
+    name: 'Партнеры',
+    links: [
+      {label: 'ЖК Эгоист', href: '#'},
+      {label: 'ЖК Выборгский', href: '#'},
+      {label: 'ЖК Партнера', href: '#'},
+    ]
+  }
+
+include ../project-links/project-links.pug
+
+footer(class='footer')
+  div(class='footer--box')
+    div(class='footer--project')
+      +project-links(main)
+    div(class='footer--project')
+      +project-links(partners)
+    div(class='footer--navigation')
+      include ../navigation/navigation.pug
+    div(class='footer--social-links')
+      h3(class='visually-hidden') Мы в социальных сетях
+      include ../social-links/social-links.pug
+    div(class='footer--subscribe')
+      include ../form-subscribe/form-subscribe.pug
+    div(class='footer--bottom')
+      span © n-gk.ru, 2022
+      address 
+        | Разработка сайта – 
+        a(href="cake.ru" title='cake.ru') cake.ru

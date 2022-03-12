@@ -1,0 +1,16 @@
+@import "./card-company--box";
+@import "./card-company--bg";
+@import "./card-company--logo";
+@import "./card-company--info";
+@import "./card-company--data";
+@import "./card-company--data-value";
+@import "./card-company--data-label";
+
+.card-company {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
