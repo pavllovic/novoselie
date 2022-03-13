@@ -95,6 +95,7 @@ Filter.prototype = {
     });
 
     this.filteredProjects = filteredProjects;
+    console.log(this.filteredProjects);
   },
 
   filterOffers: function(list) {
